@@ -16,13 +16,14 @@ This script analyzes the most used programming languages in the GitHub repositor
 
 ## How to Get a GitHub Token
 
-To use the GitHub API, you'll need to create a personal access token. Here's how to get it:
+To access private repositories using the GitHub API, you'll need to create a personal access token with the right permissions. Here's how you can get it:
 
 1. Go to your [GitHub Settings](https://github.com/settings/tokens).
 2. Click on **Generate new token**.
-3. Select the necessary scopes. For this script, you just need the `repo` scope to read public repositories.
-4. Click **Generate token**.
-5. Copy the token and save it somewhere safe. You'll need it to authenticate API requests.
+3. Select the **repo** scope, which includes access to both public and private repositories.
+4. (Optional) You can also select additional scopes like `read:user` if you need to access other parts of your account.
+5. Click **Generate token**.
+6. Copy the token and store it safely, as it will not be shown again.
 
 Once you have your token, replace `YOUR_GITHUB_TOKEN` in the script with the token you generated.
 
